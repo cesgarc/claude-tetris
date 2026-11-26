@@ -102,7 +102,7 @@ Define la estructura visual:
 
 ### 2. `style.css`
 
-Aporta el aspecto visual con estética _dark / retro arcade_: fondo oscuro, tipografía monoespaciada para los marcadores y _backdrop blur_ en los overlays.
+Aporta el aspecto visual con estética _dark / retro arcade_: fondo oscuro, tipografía monoespaciada para los marcadores y _backdrop blur_ en los overlays. Los colores son variables CSS (`:root` = oscuro, `:root[data-theme="light"]` = claro).
 
 ### 3. `game.js`
 
@@ -165,6 +165,8 @@ Cuando una pieza recién generada ya colisiona al aparecer (`spawn`), se dispara
 ---
 
 ## Personalización
+
+**Tema:** el juego arranca en modo oscuro; el switch «Modo claro» (esquina superior derecha) cambia a claro y se recuerda en `localStorage`. Los colores se editan en las variables de `style.css`.
 
 Algunos parámetros fáciles de tunear en `game.js`:
 
